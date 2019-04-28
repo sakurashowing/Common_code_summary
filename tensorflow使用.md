@@ -21,3 +21,9 @@
 # 6、get_batch()内队列批量读取方式的研究
 
 <https://blog.csdn.net/qq_32445015/article/details/81201973>
+
+# 7、tensorflow数据读取机制
+
+## tf.train.slice_input_producer 和 tf.train.batch 函数
+
+<https://blog.csdn.net/dcrmg/article/details/79776876>

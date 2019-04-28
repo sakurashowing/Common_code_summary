@@ -405,6 +405,30 @@ True
 
 ![](D:/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/deeplearning_ai_books-master/images/695618c70fd2922182dc89dca8eb83cc.png)
 
+## 7、python批量重写文件夹文件名称
+
+os.rename(old_name,new_name)  要是需要改动的文件也在该文件夹，需要加入路径
+
+```
+train_list='./data/train/0none'
+count=0
+for item in os.listdir(train_list):
+ os.rename(os.path.join(train_list,item),os.path.join(train_list,'none'+'.'+str(count) + item))
+    #os.rename(item,'none'+'.'+ item)
+    count+=1
+```
+
+## 8、去除字符串中数字
+
+```
+from string import digits
+ 
+s = 'abc123def456ghi789zero0'
+remove_digits = str.maketrans('', '', digits)
+res = s.translate(remove_digits)
+# 'abcdefghizero'
+```
+
 
 
 # 2、os使用
